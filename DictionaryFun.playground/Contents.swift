@@ -16,11 +16,11 @@
 
 
 
-
+var states = ["New York": "Albany", "Ohio": "Columbus", "Georgia": "Atlanta", "Kentucky": "Frankfort", "Florida": "Talahasee"]
 /*: question2
  ### 2. What is the type of the dictionary you created in Question 1?
  */
-
+var answer: [String: String]
 
 
 
@@ -28,7 +28,7 @@
  ### 3. Create a variable called `capital` and assign to it Florida's capital from the dictionary.
  */
 // write your code here
-
+var capital = ["Florida"]
 
 
 
@@ -37,6 +37,9 @@
  */
 // write your code here
 
+if let capital: String? = states["Florida"] {
+    print("The capital of Florida is: \(capital)")
+}
 
 
 
@@ -45,7 +48,7 @@
  */
 // write your code here
 
-
+var anotherCapital = ["Pennsylvania"]
 
 
 /*: question6
@@ -54,6 +57,9 @@
 // write your code here
 
 
+if let anotherCapital: String? = "Pennsylvania" {
+    print("I don't know Pennsylvania's capital")
+}
 
 
 /*: question7
